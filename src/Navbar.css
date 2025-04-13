@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar{
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.767);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  z-index: 888;
+}
+
+.navtop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navtop img{
+  width: 100px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.navtop a{
+  text-decoration: none;
+}
+
+.navbottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbottom div {
+  position: relative;
+  border-bottom: 2px solid white;
+}
+
+.navbottom div input{
+  width: 200px;
+  height: 5vh;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 6px;
+}
+
+.navbottom div span{
+  position: relative;
+  left: 0;
+  top: 5px;
+  font-size: 23px;
+}
+
+.navbottom div span:hover{
+  cursor: pointer;
+}
+
+.navbottom button{
+  width: 80px;
+  height: 5vh;
+  background-color: orangered;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.navbottom button:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.navbottom span{
+  font-size: 25px;
+}
+
+.navbottom span:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.menu{
+  font-size: 40px;
+  display: none;
+}
+
+.menushow{
+  width: 260px;
+    height: 325px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px 20px 30px;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: black;
+    z-index: 888;
+}
+
+.menushow a{
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.menushow div{
+  position: relative;
+  width: 100%;
+  height: 3vh;
+}
+
+.menushow div span{
+  position: absolute;
+  right: 0;
+  font-size: 23px;
+}
+
+.menushow div span:hover{
+  cursor: pointer;
+}
+
+.menushow button{
+  width: 60%;
+  height: 6vh;
+  background-color: orangered;
+  border: none;
+  border-radius: 7px;
+}
+
+@media screen and (max-width:980px) and (min-width:320px) {
+  .menu{
+    display: block;
+  }
+  .navbottom{
+    display: none;
+  }
+  .navtop a{
+    display: none;
+  }
+}
